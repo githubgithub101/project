@@ -1,7 +1,5 @@
 import multiprocessing
 
-
-
 def bins_to_bytes(bins):
     return bytearray(int(bins[i:i+8], 2) for i in range(0, len(bins), 8))
 
@@ -72,3 +70,5 @@ def XOR_decryption(path, key):
         return file
     except Exception:
         print('Error caught : ', Exception.__name__)
+
+
