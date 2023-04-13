@@ -3,12 +3,8 @@ import multiprocessing
 import streamlit as st
 from XOR_file_enc_threading import XOR_encryption, XOR_decryption
 
-# import warnings
-# warnings.filterwarnings("ignore")
+# streamlit run app.py 2>NUL
 
-# streamlit run app.py 2>NUL
-# streamlit run app.py 2>NUL
-# streamlit run app.py 2>NUL
 
 st.title('XOR Cipher')
 st.header('FILE ENCRYPTION USING XOR CIPHER')
