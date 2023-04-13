@@ -1,0 +1,5 @@
+[global]
+showWarningOnDirectExecution = false
+
+[server]
+maxUploadSize = 500
