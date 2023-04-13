@@ -1,4 +1,5 @@
 from io import BytesIO
+import multiprocessing
 import streamlit as st
 from XOR_file_enc_threading import XOR_encryption, XOR_decryption
 
@@ -69,6 +70,7 @@ if select_option:
             file = XOR_decryption(file_contents, key)
             file_output = "decrypted_"+file_name[:-4]
 
+        print(f"Processing by {multiprocessing.cpu_count()} CPUs...")
         # Convert bytearray to BytesIO object
         file = BytesIO(file)
 

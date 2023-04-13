@@ -30,7 +30,7 @@ def xor_cipher(text_binary, key_binary):
 def xor_worker(file, key):
         num_of_workers = get_cpu_count()  # number of CPU or workers
         pool = get_pool_size(num_of_workers)
-        print(f"Processing by {num_of_workers} CPUs...")
+        # print(f"Processing by {num_of_workers} CPUs...")
         file = char_to_bin(file)
         key = bin(int(key))[2:]
         bit_len = int(len(file))
