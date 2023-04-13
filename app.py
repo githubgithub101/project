@@ -13,7 +13,9 @@ st.title('XOR Cipher')
 st.header('FILE ENCRYPTION USING XOR CIPHER')
 st.write("""
 File encryption using the XOR cipher is a method of securing the contents of a file by applying a simple encryption algorithm known as the XOR (exclusive OR) cipher. The XOR cipher is a symmetric encryption algorithm that operates on binary data, where each byte (or bit) in the file is bitwise XORed with a key, typically a sequence of bytes (or bits).
+
 The XOR operation works by comparing the corresponding bits of two operands (in this case, the file data and the encryption key), and producing an output bit that is set to 1 if the two input bits are different (i.e., one is 0 and the other is 1), and 0 if the input bits are the same (i.e., both 0 or both 1). This operation is performed on each byte (or bit) of the file data, using the corresponding byte (or bit) of the encryption key, which is repeated cyclically to match the length of the file.
+
 To encrypt a file using XOR cipher, each byte in the file is bitwise XORed with a corresponding byte from the encryption key. This process is reversible, meaning that the original file can be decrypted by applying the same XOR operation using the same encryption key. However, the security of the XOR cipher is relatively weak, as it is susceptible to various attacks, such as frequency analysis and known-plaintext attacks, and is not recommended for strong encryption requirements.
 """)
 st.write('---')
